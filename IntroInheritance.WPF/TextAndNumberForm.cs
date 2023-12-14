@@ -9,5 +9,11 @@ namespace IntroInheritance.WPF
             AddField<string>("Tekst");
             AddField<int>("Tall", true);
         }
+
+        // Denne er overflødig, men gir kanskje litt økt forståelse
+        public TextAndNumber GeTextAndNumber()
+        {
+            return Get<TextAndNumber>();
+        }
     }
 }
