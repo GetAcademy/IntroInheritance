@@ -23,6 +23,8 @@ namespace IntroInheritance.WPF
             panel.Children.Add(new Rectangle{Height = 30});
             //panel.Children.Add(cityForm);
 
+            var textAndNumberForm = new TextAndNumberForm();
+            panel.Children.Add(textAndNumberForm);
 
             window.Content = panel;
             app.Run(window);
