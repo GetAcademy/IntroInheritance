@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace IntroInheritance.WPF
 {
@@ -10,10 +11,30 @@ namespace IntroInheritance.WPF
         {
             var app = new Application();
             var window = new Window();
+
             var panel = new StackPanel();
+
+
+
             window.Content = panel;
-            panel.Children.Add(new ExitButton());
             app.Run(window);
         }
     }
 }
+
+
+//var yellowButton = new YellowButton();
+//yellowButton.Content = "Hei";
+//panel.Children.Add(yellowButton);
+
+//var bigButton = new BigYellowButton();
+//bigButton.Content = "Hei";
+//panel.Children.Add(bigButton);
+
+//panel.Children.Add(new ExitButton());
+//panel.Children.Add(new ExitButton());
+//panel.Children.Add(new ExitButton());
+//panel.Children.Add(new ExitButton());
+
+
+

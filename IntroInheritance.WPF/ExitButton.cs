@@ -16,6 +16,12 @@ namespace IntroInheritance.WPF
             Width = 50;
             Height = 50;
             Content = "EXIT";
+            Click += Exit;
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
