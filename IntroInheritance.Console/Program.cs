@@ -1,4 +1,4 @@
-﻿using IntroInheritance.Console;
+﻿using IntroInheritance.Consolex;
 
 var a = new CenteredHeader("Overskrift 1");
 var b = new IndentedParagraph("Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. Bla bla bla. ");
@@ -10,7 +10,9 @@ var f1 = new BulletPoint("a");
 var f2 = new BulletPoint("b");
 var f3 = new BulletPoint("c");
 
-var textElements = new ITextElement[] { a, b, c, d, e, f1, f2, f3 };
+//var te = new TextElement("Terje");
+
+var textElements = new TextElement[] { a, b, c, d, e, f1, f2, f3};
 foreach (var textElement in textElements)
 {
     textElement.Show();

@@ -1,25 +1,23 @@
-﻿namespace IntroInheritance.Console
+﻿namespace IntroInheritance.Consolex
 {
-    internal class BulletPoint : ITextElement
+    internal class BulletPoint : TextElement
     {
-        private string _text;
-
         public BulletPoint(string text)
+        :base(text)
         {
-            _text = text;
         }
 
-        public void Show()
+        public override void Show()
         {
-            System.Console.Write(" * ");
-            System.Console.WriteLine(_text);
+            Console.Write(" * ");
+            Console.WriteLine(_text);
         }
 
         public void ShowHighlighted()
         {
-            System.Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Show();
-            System.Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

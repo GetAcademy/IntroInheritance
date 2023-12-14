@@ -1,25 +1,21 @@
-﻿ namespace IntroInheritance.Console
+﻿ namespace IntroInheritance.Consolex
 {
-    internal class IndentedParagraph : ITextElement
+    internal class IndentedParagraph : TextElement
     {
-        private string _text;
-
-        public IndentedParagraph(string text)
+        public IndentedParagraph(string text) : base(text)
         {
-            _text = text;
         }
 
-        public void Show()
+        public override void Show()
         {
-            System.Console.CursorLeft = 8;
-            System.Console.WriteLine(_text);
+            Console.CursorLeft = 8;
+            base.Show();
         }
 
         public void ShowHighlighted()
         {
-            
-            System.Console.CursorLeft = 8;
-            System.Console.WriteLine(_text.ToUpper());
+            Console.CursorLeft = 8;
+            base.ShowHighlighted();
         }
     }
 }
