@@ -6,7 +6,7 @@ namespace IntroInheritance.WPF
     {
         public TextAndNumberForm()
         {
-            AddField<string>("Tekst", false);
+            AddField<string>("Tekst");
             AddField<int>("Tall", true);
         }
     }
