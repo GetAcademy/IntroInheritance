@@ -1,8 +1,6 @@
-﻿using System.Reflection.Emit;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace IntroInheritance.WPF
 {
@@ -20,7 +18,7 @@ namespace IntroInheritance.WPF
         public void AddField<T2>(string labelText, bool isLast = false)
         {
             RowDefinitions.Add(new RowDefinition());
-            var label = new System.Windows.Controls.Label { Content = labelText };
+            var label = new Label { Content = labelText };
             var textBox = new TextBox();
             var index = _textBoxes.Count;
             _textBoxes.Add(textBox);
