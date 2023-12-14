@@ -5,12 +5,10 @@ namespace IntroInheritance.WPF
 {
     internal class PersonForm : Form
     {
-        // Pause til 1337
-
-
-
         public PersonForm() : base("Fornavn", "E-post")
         {
+            AddField("Fornavn");
+            AddField("E-post");
         }
 
         public Person GetPerson()

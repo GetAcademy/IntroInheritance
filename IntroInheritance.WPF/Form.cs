@@ -32,5 +32,10 @@ namespace IntroInheritance.WPF
                 Children.Add(textBox);
             }
         }
+
+        protected void AddField(string label)
+        {
+
+        }
     }
 }
