@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroInheritance.WPF", "IntroInheritance.WPF\IntroInheritance.WPF.csproj", "{C13C0CDE-E547-4765-819B-BDC7E38A3CE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroInheritance.Console", "IntroInheritance.Console\IntroInheritance.Console.csproj", "{91F98812-B431-4735-9117-9F510437DDA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C13C0CDE-E547-4765-819B-BDC7E38A3CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13C0CDE-E547-4765-819B-BDC7E38A3CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13C0CDE-E547-4765-819B-BDC7E38A3CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F98812-B431-4735-9117-9F510437DDA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F98812-B431-4735-9117-9F510437DDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F98812-B431-4735-9117-9F510437DDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F98812-B431-4735-9117-9F510437DDA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
