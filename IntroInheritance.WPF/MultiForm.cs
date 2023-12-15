@@ -15,7 +15,7 @@ namespace IntroInheritance.WPF
             ColumnDefinitions.Add(new ColumnDefinition());
         }
 
-        public void AddField<T2>(string labelText, bool isLast = false)
+        public void AddField(string labelText, bool isLast = false)
         {
             RowDefinitions.Add(new RowDefinition());
             var label = new Label { Content = labelText };

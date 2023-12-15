@@ -6,8 +6,8 @@ namespace IntroInheritance.WPF
     {
         public TextAndNumberForm()
         {
-            AddField<string>("Tekst");
-            AddField<int>("Tall", true);
+            AddField("Tekst");
+            AddField("Tall", true);
         }
 
         // Denne er overflødig, men gir kanskje litt økt forståelse
