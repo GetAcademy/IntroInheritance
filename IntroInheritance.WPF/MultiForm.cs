@@ -4,7 +4,7 @@ using System.Windows.Controls;
 
 namespace IntroInheritance.WPF
 {
-    internal class MultiForm<T1> : Grid
+    internal class MultiForm<T> : Grid
     {
         protected readonly List<TextBox> _textBoxes;
 
@@ -44,7 +44,7 @@ namespace IntroInheritance.WPF
 
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            var obj = Get<T1>();
+            var obj = Get<T>();
             var type = obj.GetType().FullName;
             var json = JsonSerializer.Serialize(obj);
 
@@ -55,9 +55,9 @@ namespace IntroInheritance.WPF
             MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
         }
 
-        public T1 Get<T1>()
+        public T Get<T>()
         {
-            var instance = Activator.CreateInstance<T1>();
+            var instance = Activator.CreateInstance<T>();
             var type = instance.GetType();
             var properties = type.GetProperties();
             for (var index = 0; index < properties.Length; index++)
